@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/test.css">
+    <link rel="shortcut icon" href="Img/favicon_io(1)/favicon.ico" type="image/x-icon">
+    <title>Troller's Heaven - Chat & Chill, Make New Friends</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(32, 32, 32);
+}
+
+
+/* Navigation Bar */
+
+.navbar{
+    display: flex;
+    background-color: rgb(32, 32, 32);
+    border-bottom: 5px solid #3cd6ea;
+    position: sticky;
+    top: 0px
+}
+
+.nav-list{
+    width: 50%;
+    display: flex;
+    background-color: rgb(32, 32, 32);
+    align-items: center;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: #3cd6ea;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: 695;
+}
+
+.nav-list li a:hover{
+    color: gray;
+}
+
+.sb{
+    width: 50%;
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    justify-content: right;
+}
+
+#sb1{
+    border: 2px solid #3cd6ea;
+    margin-top: 20px;
+    background-color: rgb(32, 32, 32);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 30px;
+    padding-right: 120px;
+    padding-left: 15px;
+    color: white;
+}
+
+#sb1:active{
+    border: 2px solid #3cd6ea;
+}
+
+.btn{
+    background-color: #3cd6ea;
+    border: 2px solid #3cd6ea;
+    height: 34px;
+    margin-right: 50px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 20px;
+    padding-left: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.icon{
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 50px;
+    width: 15%;
+    position: sticky;
+    left: 0px;
+}
+
+.icon img{
+    width: 15%;
+    position: fixed;
+}
+
+#ss{
+    width: 20px;
+    height: 20px;
+}
+
+.members{
+    background-color: #6064f4;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+
+.Join1{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    font-weight: 700;
+    color: #6064f4;
+    background-color: white;
+    border: none;
+    margin-left: 250px;
+    text-decoration: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: sticky;
+    bottom: 17px;
+}
+
+.btn3{
+    margin-top: 23px;
+}
+
+.count{
+    margin-right: 300px;
+}
+
+/* .leaderboard{
+    width: 400px;
+    height: 485px;
+    border: 5px solid #3cd6ea;
+    background-color: rgb(32, 32, 32);
+
+} */
+
+.title1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 5px solid #3cd6ea;
+    color: #3cd6ea;
+}
+
+.list{
+    list-style: none;
+}
+
+.num{
+    height: 40.2px;
+    text-align: center;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding-top: 4px;
+}
+
+.intro{
+    background-image: url("https://i.ibb.co/9sSnHtv/White-And-Black-Modern-Gaming-Channel-Banner-Landscape-2-1-1.png");
+    object-fit: fill;
+    width: 1400px;
+    height: 490px;
+    border-right: none;
+    text-align: center;
+    padding-left: 30px;
+
+}
+
+.first{
+    display: flex;
+}
+
+.write{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.p1{
+    font-size: 40px;
+    font-weight: 700;
+    padding-top: 130px;
+}
+
+.p2{
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.p3{
+    padding-top: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.user{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.user{
+    border: 1px solid #3cd6ea;
+    width: 300px;
+    margin-left: 500px;
+    color: white;
+}
+
+.username{
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    opacity: 20%;
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+
+.btn1{
+    width: 70px;
+    border: 2px solid #3cd6ea;
+    border-left: none;
+    background-color: #3cd6ea;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: 800;
+    color: rgb(32, 32, 32);
+    cursor: pointer;
+}
+
+.labelnews{
+    color: white;
+}
+
+.second{
+    background-image: url("https://i.ibb.co/VC4n7DM/Boost-our-server.png");
+    object-fit: scale-down;
+    height: 50vh;
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.pic{
+    padding-top: 35px;
+    padding-left: 35px;
+    text-align: center;
+}
+
+.boost-text{
+    width: 800px;
+    color: hotpink;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    font-style: italic;
+    margin-left: 75px;
+    margin-top: 60px;
+}
+
+.boost-btn{
+    width: 100px;
+    height: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: hotpink;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.b-btn{
+    margin-top: 290px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+
+}
+
+.title2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 20px;
+}
+
+.line2{
+    margin-top: 30px;
+}
+
+.partners{
+    height: 50vh;
+}
+
+
+
+.count2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #6064f4;
+}
+
+.gaming{
+    background-image: url("https://i.postimg.cc/0QmkZS8q/Untitled-design-1.png");
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 35px;
+    height: 60vh;
+}
+
+.intro2{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+.Join2{
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: white;
+    color: #6064f4;
+    padding: 20px;
+}
+
+.wid{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.title3{
+    margin-top: 35px;
+    font-size: xx-large;
+    margin-left: 35px;
+}
+
+.pp2{
+    margin-top: 30px;
+    margin-left: 35px;
+    font-size: larger;
+}
+
+.ul2{
+    padding-top: 20px;
+    list-style: none;
+    margin-left: 35px;
+    font-size: larger;
+}
+
+footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: larger;
+    font-weight: 500;
+}
+
+@media screen and (max-width:1200) {
+    .icon{
+        margin-top: 25px;
+        margin-left: 10px;
+        margin-right: 50px;
+        width: 15%;
+        position: sticky;
+        left: 0px;
+    }
+    
+    .icon img{
+        width: 15%;
+        position: fixed;
+    }
+}
+
+@media screen and (max-width: 1000) {
+    .nav-list li{
+        list-style: none;
+        visibility: hidden;
+    }
+    
+    .nav-list li a{
+        text-decoration: none;
+        color: #3cd6ea;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: medium;
+        font-weight: 695;
+        margin: 0px;
+        padding-left: 5px;
+        padding-right: 5px;
+        visibility: hidden;
+    }
+    .Join1{
+        margin-right: 70px;
+    }
+}
+</style>
+<body>
+    <nav class="navbar">
+        <div class="icon"><img src="https://i.ibb.co/f8zt3Ww/ico-removebg-preview.png" alt="Icon"></div>
+        <ul class="nav-list">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Events">Events</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Boost">Boost</a></li>
+        </ul>
+        <div class="sb">
+            <input type="text" name="sb1" id="sb1" placeholder="Search...">
+            <button class="btn btn-sm"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/1200px-Magnifying_glass_icon.svg.png"
+                    alt="Search" id="ss"></button>
+        </div>
+    </nav>
+    <div class="members">
+        <iframe src="https://discord.com/widget?id=1091376026967343225&theme=dark" width="350" height="70px"
+            allowtransparency="true" frameborder="0"
+            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+            class="count"></iframe>
+        <div class="btn3">
+            <a href="https://discord.gg/v4evf6WgVC" class="Join1" target="_blank">Join</a>
+        </div>
+    </div>
+    <main class="main">
+        <div class="first">
+            <div class="intro">
+                <div class="intro1">
+                    <p class="write p1">Join our Server. Make new friends.</p>
+                    <p class="write p2">Chat and chill. Have some meaningful conversations. Enjoy a server full of
+                        liberties.</p>
+                    <p class="write p3">But most importantly HAVE FUN.</p>
+                </div>
+                <div class="user">
+                    <input type="text" name="username" id="username" placeholder="Username..." class="username" >
+                    <button type="button" class="btn1">Join</button>
+                </div>
+                <div class="outro">
+                    <label for="newsletter" class="labelnews">Subscribe to our newsletters</label>
+                    <input type="checkbox" name="newsletter" id="newsletter" class="newsletter">
+                </div>
+            </div>
+            <!-- <div class="leaderboard">
+                <h1 class="title1">leaderboard</h1>
+                <ul class="list">
+                    <li class="num">Lorem</li>
+                    <li class="num">ipsum</li>
+                    <li class="num">dolor</li>
+                    <li class="num">blaaaah</li>
+                    <li class="num">toop</li>
+                    <li class="num">idiot</li>
+                    <li class="num">yoyoyoyoy</li>
+                    <li class="num">56565656</li>
+                    <li class="num">82</li>
+                    <li class="num">illi</li>
+                </ul>
+            </div> -->
+        </div>
+        <div class="gaming">
+            <div class="intro2">
+                <h1 class="title3">Gamer's Heaven - Join our gaming community</h1>
+                <p class="pp2">Join our Gaming Heaven server!
+                    We are currently looking for awesome non-toxic members
+                    Join us today and get: </p>
+                <ul class="ul2">
+                    <li class="list2"> - Friendly community and staff,</li>
+                    <li class="list2">- Access to gaming channels and voices,</li>
+                    <li class="list2">- Players ready to play with you games.</li>
+                </ul>
+            </div>
+            <div class="con">
+                <div class="count2">
+                    <iframe src="https://discord.com/widget?id=1151070532389838858&theme=dark" width="300" height="70"
+                        allowtransparency="true" frameborder="0"
+                        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                    <a href="http://discord.gg/4wBXsmD4wK" target="_blank" class="Join2">Join</a>
+                </div>
+            </div>
+        </div>
+        <div class="second">
+            <div class="pic">
+            </div>
+            <div class="boost-text">
+                <h1 class="title2">Boost Our Community</h1>
+                <p class="write1 pp1"> "By boosting our server, you'll unlock awesome perks like a personalized color
+                    role and access to exclusive private channels. Your support would mean the world to us and help us
+                    create an even better community experience. If you're interested, just click on the button and let
+                    the perks roll in!"</p>
+
+            </div>
+            <div class="b-btn">
+                <a href="#Boost" class="boost-btn">Boost</a>
+            </div>
+        </div>
+        <hr class="line3">
+    </main>
+    <hr class="line3">
+    <footer>
+        Created with 💜 by Eddie the Baddie.
+    </footer>
+</body>
+
+</html>
